@@ -10,7 +10,7 @@ import {
   Legend,
   ResponsiveContainer,
 } from "recharts";
-import { ChartDataPoint } from "../types";
+import type { ChartDataPoint } from "../types";
 
 interface SpendConversionChartProps {
   data: ChartDataPoint[];

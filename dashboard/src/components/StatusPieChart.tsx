@@ -1,6 +1,6 @@
 import React from "react";
 import { PieChart, Pie, Cell, Legend, Tooltip, ResponsiveContainer } from "recharts";
-import { CampaignMetrics } from "../types";
+import type { CampaignMetrics } from "../types";
 
 interface StatusPieChartProps {
   campaigns: CampaignMetrics[];

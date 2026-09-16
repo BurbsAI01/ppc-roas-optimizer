@@ -1,6 +1,6 @@
 import React from "react";
-import { PieChart, Pie, Cell, Legend, Tooltip, ResponsiveContainer } from "recharts";
-import { CampaignMetrics } from "../types";
+import { PieChart, Pie, Cell, Tooltip, ResponsiveContainer } from "recharts";
+import type { CampaignMetrics } from "../types";
 
 interface BudgetPieChartProps {
   campaigns: CampaignMetrics[];
@@ -43,7 +43,7 @@ export const BudgetPieChart: React.FC<BudgetPieChartProps> = ({ campaigns }) => 
             fill="#8884d8"
             dataKey="value"
           >
-            {data.map((entry, index) => (
+            {data.map((_, index) => (
               <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
             ))}
           </Pie>

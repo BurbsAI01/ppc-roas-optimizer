@@ -10,7 +10,7 @@ import {
   ResponsiveContainer,
   ReferenceLine,
 } from "recharts";
-import { ChartDataPoint } from "../types";
+import type { ChartDataPoint } from "../types";
 
 interface ROASTrendChartProps {
   data: ChartDataPoint[];

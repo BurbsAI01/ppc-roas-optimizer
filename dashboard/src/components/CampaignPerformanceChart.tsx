@@ -6,11 +6,10 @@ import {
   YAxis,
   CartesianGrid,
   Tooltip,
-  Legend,
   ResponsiveContainer,
   Cell,
 } from "recharts";
-import { CampaignMetrics } from "../types";
+import type { CampaignMetrics } from "../types";
 
 interface CampaignPerformanceChartProps {
   campaigns: CampaignMetrics[];
@@ -45,7 +44,7 @@ export const CampaignPerformanceChart: React.FC<CampaignPerformanceChartProps> =
         >
           <CartesianGrid strokeDasharray="3 3" stroke="#e5e7eb" />
           <XAxis type="number" stroke="#6b7280" />
-          <YAxis dataKey="name" type="category" width={140} stroke="#6b7280" width={140} />
+          <YAxis dataKey="name" type="category" width={140} stroke="#6b7280" />
           <Tooltip
             contentStyle={{
               backgroundColor: "#ffffff",

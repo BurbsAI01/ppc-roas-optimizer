@@ -1,6 +1,6 @@
 import React from "react";
 import { AlertCircle, TrendingUp, TrendingDown, Zap } from "lucide-react";
-import { Recommendation } from "../types";
+import type { Recommendation } from "../types";
 
 interface RecommendationsTableProps {
   recommendations: Recommendation[];

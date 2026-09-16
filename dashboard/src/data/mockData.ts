@@ -1,4 +1,4 @@
-import { CampaignMetrics, Recommendation, ChartDataPoint } from "../types";
+import type { CampaignMetrics, Recommendation, ChartDataPoint } from "../types";
 
 export const mockCampaigns: CampaignMetrics[] = [
   {
