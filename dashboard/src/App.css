@@ -1,0 +1,55 @@
+/* PPC ROAS Optimizer Dashboard Styles */
+
+/* Smooth animations */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card {
+  animation: slideIn 0.3s ease-out;
+}
+
+/* Recharts custom styles */
+.recharts-tooltip {
+  @apply rounded-lg shadow-lg;
+}
+
+.recharts-default-tooltip {
+  @apply border-0;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Table enhancements */
+table {
+  border-collapse: collapse;
+}
+
+tbody tr {
+  transition: background-color 0.2s ease;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  header {
+    padding: 1rem 0.5rem;
+  }
+
+  main {
+    padding: 1rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr !important;
+  }
+}
