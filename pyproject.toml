@@ -13,6 +13,9 @@ anthropic = "^0.32.0"
 python-dotenv = "^1.0.0"
 pydantic = "^2.0.0"
 pydantic-settings = "^2.0.0"
+fastapi = "^0.104.0"
+uvicorn = "^0.24.0"
+httpx = "^0.25.0"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^7.4.0"
